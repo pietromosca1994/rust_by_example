@@ -1,8 +1,16 @@
 # Rust by Example - Notes 
-### hello_cargo
-**TOML (Tom’s Obvious, Minimal Language) format, which is Cargo’s configuration format.**  
+### 1. hello_cargo
+#### TOML (Tom’s Obvious, Minimal Language) format, which is Cargo’s configuration format.**  
 - [package], is a section heading that indicates that the following statements are configuring a package. As we add more information to this file, we’ll add other sections.  
 - [dependencies], is the start of a section for you to list any of your project’s dependencies. In Rust, packages of code are referred to as crates. 
+
+#### 1.1 Comments 
+Regular comments which are ignored by the compiler:  
+// Line comments which go to the end of the line.  
+/* Block comments which go to the closing delimiter. */  
+Doc comments which are parsed into HTML library documentation:  
+/// Generate library docs for the following item.  
+//! Generate library docs for the enclosing item.  
 
 ### primitives
 **Scalar Types**
